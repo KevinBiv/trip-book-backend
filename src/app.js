@@ -20,6 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use('/api/routes', require('./routes/routes'));
+app.use('/api/buses', require('./routes/buses'));
 
 // Error handling
 app.use((err, req, res, next) => {
