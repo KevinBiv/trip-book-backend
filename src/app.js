@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api/routes', require('./routes/routes'));
 app.use('/api/buses', require('./routes/buses'));
 app.use('/api/schedules', require('./routes/schedules'));
+app.use('/api/feedbacks', require('./routes/feedbacks'));
 
 // Error handling
 app.use((err, req, res, next) => {
